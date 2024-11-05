@@ -1,0 +1,2 @@
+El presente ejercicio resulto interesante dado que permitió entender el flujo de compra del ambiente compartido. Adicional a ello, permitió identificar escalabilidad para las pruebas, es decir, contemplar posibles escenarios como, por ejemplo, una compra de más productos.
+Sumado a ello, también permite identificar posibles cambios oportunidades de mejora para el código generado para el presente entregable.
