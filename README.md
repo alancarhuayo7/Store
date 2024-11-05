@@ -15,3 +15,10 @@
 2. Crear prueba E2E
 3. Seleccionar un navegador (Para esta ejecución se realizó con Microsoft Edge)
 4. Crear el proyecto por defecto 
+
+
+#Ejecutar las pruebas
+1. En la terminal, ejecutar el comando npx cypress open
+2. En la ventana de cypress, seleccionar la opción E2E Testing y seleccionar el navegador (De preferencia Edge)
+3. Seleccionar la prueba spec.cy.js
+4. Validar resultados de las pruebas en el directorio screenshots
