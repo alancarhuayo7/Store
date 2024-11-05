@@ -1,19 +1,30 @@
-describe('Pruebas E2E', () => {
+describe('Compra de productos', () => {
+
+
 
   it('Autenticación de usuario ', () => {
     cy.fixture('navigate.json').then((locator) => {
       cy.login(locator.username, locator.password);
-  })
+      cy.screenshot();
+    })
   })
 
-  it.only('Compra de productos ', () => {
+  it.only('Compra de productos', () => {
     cy.fixture('navigate.json').then((locator) => {
       cy.login(locator.username, locator.password);
-      cy.fixture('buyProduct.json').then((locatorProduct) => {
-        cy.login(locatorProduct.productsNumber);
 
+      cy.fixture('buyInformation.json').then((locatorInformation) => {
+        cy.buy(locatorInformation.products);
+        cy.viewCar();
+
+        cy.checkoutProduct(locatorInformation.clientFirstName
+          , locatorInformation.clientLastName
+          , locatorInformation.clientPostalCode);
+
+        
+        
       })
-  })
+    })
   })
 
 })
